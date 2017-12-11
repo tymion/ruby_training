@@ -3,22 +3,22 @@
 require 'open-uri'
 require 'nokogiri'
 
-
-#puts @html_doc
-options = @html_doc.css('form#archiwum-notowan-search select#selectType option')
-#puts options
-#puts options.size
-#options = test.at_css "option#value"
-#puts options
-
 class GPWConnection
-    def initialize(url)
-        @url_base = url
-        @url_arch = url_base + "archiwum-notowan?"
-        @html_doc = Nokogiri::HTML(open(url_arch))
-    end
+    @@url_base = "https://www.gpw.pl/"
+    @@url_arch = @@url_base + "archiwum-notowan?"
+    @@html_doc = Nokogiri::HTML(open(@@url_arch))
+    @@categories = nil
     def getTypeCategories
-        options = @html_doc.css('form#archiwum-notowan-search select#selectType option')
-
-
+        if @@categories.nil? then
+            @@categories = Hash.new
+            options = @@html_doc.css('form#archiwum-notowan-search select#selectType option')
+            options.each {
+                |option|
+                next if option.css("@value").to_s.empty?
+                @@categories[option.css("@value").to_s] = option.content
+#                puts option.css("@value").to_s + ":" + option.content
+            }
+        end
+        return @@categories
+    end
 end
