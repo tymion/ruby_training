@@ -1,0 +1,32 @@
+https://www.gpw.pl/archiwum-notowan?fetch=0&type=13&instrument=06magna&date=01-12-2017&show_x=poka%c5%bc+wyniki&changelang=PL
+
+https://www.gpw.pl/ajaxindex.php?action=GPWListaSp&start=quotationsTab&gls_isin=PLPZU0000011&lang=PL
+
+https://www.gpw.pl/ajaxindex.php?action=GPWQuotationsArchive&start=ajaxInstrument&type=13&lang=PL
+
+https://www.gpw.pl/ajaxindex.php?action=GPWQuotationsETF&start=ajaxList&page=archiwum-notowan&lang=PL
+
+https://www.gpw.pl/ajaxindex.php?id=archiwum-notowan-search
+
+
+https://www.gpw.pl/archiwum-notowan?fetch=0
+
+https://www.gpw.pl//archiwum-notowan-full?type=10&amp;instrument=06MAGNA&amp;date=01-12-2017"
+
+
+
+
+
+	    	        <th class="left">Nazwa</th>
+	    	    	        <th class="left">Data sesji</th>
+	            <th class="left">Kod ISIN</th>
+        <th class="text-right">Waluta</th>
+        <th class="text-right" data-type="numeric">Kurs otwarcia</th>
+        <th class="text-right" data-type="numeric">Kurs maksymalny</th>
+        <th class="text-right" data-type="numeric">Kurs minimalny</th>
+        <th class="text-right" data-type="numeric">Kurs zamknięcia</th>
+                <th class="text-right" data-type="numeric">Zmiana kursu %</th>
+        <th class="text-right" data-type="numeric">Wolumen obrotu (w szt.)</th>
+        <th class="text-right" data-type="numeric">Liczba transakcji</th>
+        <th class="text-right" data-type="numeric">Wartość obrotu (w tys.)</th>
+
